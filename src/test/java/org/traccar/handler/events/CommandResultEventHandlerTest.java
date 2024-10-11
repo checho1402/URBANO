@@ -17,9 +17,9 @@ public class CommandResultEventHandlerTest extends BaseTest {
 
     @Test
     public void testCommandResultEventHandler() throws Exception {
-        
+
         CommandResultEventHandler commandResultEventHandler = new CommandResultEventHandler();
-        
+
         Position position = new Position();
         position.set(Position.KEY_RESULT, "Test Result");
         List<Event> events = new ArrayList<>();

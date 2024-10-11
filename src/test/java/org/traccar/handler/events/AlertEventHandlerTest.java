@@ -18,9 +18,9 @@ public class AlertEventHandlerTest extends BaseTest {
 
     @Test
     public void testAlertEventHandler() {
-        
+
         AlertEventHandler alertEventHandler = new AlertEventHandler(new Config(), mock(CacheManager.class));
-        
+
         Position position = new Position();
         position.set(Position.KEY_ALARM, Position.ALARM_GENERAL);
         List<Event> events = new ArrayList<>();

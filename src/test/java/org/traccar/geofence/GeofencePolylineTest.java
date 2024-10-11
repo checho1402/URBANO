@@ -21,7 +21,7 @@ public class GeofencePolylineTest {
         GeofenceGeometry geofenceGeometry = new GeofencePolyline(test);
         assertEquals(geofenceGeometry.toWkt(), test);
     }
-    
+
     @Test
     public void testContainsPolyline1Interval() throws ParseException {
         GeofenceGeometry geofenceGeometry = new GeofencePolyline(
@@ -44,7 +44,7 @@ public class GeofencePolylineTest {
         assertFalse(geofenceGeometry.containsPoint(config, mock(Geofence.class), 56.83861, 60.60822));
 
     }
-    
+
     @Test
     public void testContainsPolylineNear180() throws ParseException {
         GeofenceGeometry geofenceGeometry = new GeofencePolyline(
